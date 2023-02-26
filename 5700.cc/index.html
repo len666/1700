@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head design-width="750">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>5700</title>
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <script src="js/rem.js"></script>
+    <script src="https://res.ccsdyjx.com/static-res/jssdk/release/link-deep.min.js"></script>
+		<script>
+		  new LinkDeep({
+			appKey: '这里对应linkdeep的key',
+			onReady: function (wakeupOrInstall, wakeup) {
+			  wakeup()
+			  $('.download').on('click', function () {
+				console.log('download')
+				wakeupOrInstall()
+			  })
+			}
+		  })
+		</script>
+</head>
+<body>
+<div class="main">
+    <div class="logo">
+        <img src="images/index_logo_328x102.png">
+    </div>
+    <div class="banner">
+        <img src="images/index_banner.png">
+    </div>
+    <div class="intro">
+        <img src="images/index_intro_750x270.png">
+    </div>
+    <div class="download_button">
+        <button class="download"></button>
+    </div>
+
+    <div class="cdnLine">
+        <div class="tits">
+            <img src="images/line.png" alt="">
+        </div>
+        <div class="domain">
+            <div class="row">
+                <a href="https://5700aa.com" class="h5btn">
+                    <div class="webs">
+                        <div class="ms">11ms</div>
+                        <div class="txt">5700aa.com</div>
+                    </div>
+                    <div class="buttons">
+                        <button></button>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://5700bb.com" class="h5btn">
+                    <div class="webs">
+                        <div class="ms">17ms</div>
+                        <div class="txt">5700bb.com</div>
+                    </div>
+                    <div class="buttons">
+                        <button></button>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="https://5700cc.com" class="h5btn">
+                    <div class="webs">
+                        <div class="ms">17ms</div>
+                        <div class="txt">5700cc.com</div>
+                    </div>
+                    <div class="buttons">
+                        <button></button>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="recommend">
+        <img src="images/index_recommend.png">
+    </div>
+
+    <div class="wonderful">
+        <img src="images/wonderful.png">
+    </div>
+    <div class="screenshot">
+        <div class="swiper_banner swiper-container">
+            <div class="swiper-wrapper">
+                <span class="swiper-slide"><img src="images/banner01.png"></span>
+                <span class="swiper-slide"><img src="images/banner02.png"></span>
+                <span class="swiper-slide"><img src="images/banner03.png"></span>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+   
+    <div class="index_bottom">
+        <img src="images/index_bottom_750x822.png">
+    </div>
+    <div class="fix-download">
+        <img src="images/fix_bottom.png">
+        <button class="download"></button>
+    </div>
+</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/swiper-4.2.0.min.js"></script>
+<script>
+    var downIosUrl = '';
+    var downAndroidUrl = '';
+    var isIos = (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent));
+
+    $(window).ready(function() {
+        var mySwiper = new Swiper('.swiper_banner',{
+            speed: 300,
+            loop: true,
+            autoplay:true,
+            effect:'slide',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    });
+</script>
+
+</body>
+</html>
