@@ -149,7 +149,7 @@ button,dd,dl,dt,h1,h2,h3,h4,h5,li,p,ul{margin:0;padding:0;list-style:none}
     font-weight:700;
     font-family:arial
 }
-.main .recommend {width: 100%;padding-bottom: .5rem;}
+.main .recommend {width: 100%;padding: 1rem 0;}
 .main .wonderful img {width: 3.52rem;}
 .main > .screenshot {
     position: relative;
@@ -180,6 +180,16 @@ button,dd,dl,dt,h1,h2,h3,h4,h5,li,p,ul{margin:0;padding:0;list-style:none}
     margin-top: -0.28rem;
     -webkit-animation: myfirst 1s infinite linear;
     animation: myfirst 1s infinite linear;
+}
+.main .fix-service{
+    position: fixed;
+    right: 50%;
+    margin-right: -3.75rem;
+    z-index: 99;
+    top: 30%;
+}
+.fix-service img{
+    width: 1.22rem;
 }
 @-webkit-keyframes myfirst {
     from {

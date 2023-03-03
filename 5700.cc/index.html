@@ -6,24 +6,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <title>5700</title>
-    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <title>&#53;&#55;&#26827;&#29260;</title>
+    <link rel="stylesheet" href="css/style.min.css?v=20230304" type="text/css">
     <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <script src="js/rem.js"></script>
-    <!-- <script src="https://res.ccsdyjx.com/static-res/jssdk/release/link-deep.min.js"></script> -->
-		<script>
-		//   new LinkDeep({
-		// 	appKey: '这里对应linkdeep的key',
-		// 	onReady: function (wakeupOrInstall, wakeup) {
-		// 	  wakeup()
-		// 	  $('.download').on('click', function () {
-		// 		console.log('download')
-		// 		wakeupOrInstall()
-		// 	  })
-		// 	}
-		//   })
-		</script>
 </head>
 <body>
 <div class="main">
@@ -68,10 +55,10 @@
                 </a>
             </div>
             <div class="row">
-                <a href="https://5700cc.com" class="h5btn">
+                <a href="https://5700dd.com" class="h5btn">
                     <div class="webs">
                         <div class="ms">17ms</div>
-                        <div class="txt">5700cc.com</div>
+                        <div class="txt">5700dd.com</div>
                     </div>
                     <div class="buttons">
                         <button></button>
@@ -82,23 +69,29 @@
         </div>
     </div>
 
-    <div class="recommend">
-        <img src="images/index_recommend.png">
-    </div>
-
     <div class="wonderful">
         <img src="images/wonderful.png">
     </div>
     <div class="screenshot">
         <div class="swiper_banner swiper-container">
             <div class="swiper-wrapper">
-                <span class="swiper-slide"><img src="images/banner01.png"></span>
-                <span class="swiper-slide"><img src="images/banner02.png"></span>
-                <span class="swiper-slide"><img src="images/banner03.png"></span>
+                <span class="swiper-slide"><img src="images/banner001.jpg"></span>
+                <span class="swiper-slide"><img src="images/banner002.jpg"></span>
+                <span class="swiper-slide"><img src="images/banner003.jpg"></span>
+                <span class="swiper-slide"><img src="images/banner004.jpg"></span>
+                <span class="swiper-slide"><img src="images/banner005.jpg"></span>
+                <span class="swiper-slide"><img src="images/banner006.jpg"></span>
+                <span class="swiper-slide"><img src="images/banner007.jpg"></span>
+                <span class="swiper-slide"><img src="images/banner008.jpg"></span>
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
+
+    <div class="recommend">
+        <img src="images/index_recommend.png">
+    </div>
+
    
     <div class="index_bottom">
         <img src="images/index_bottom_750x822.png">
@@ -107,32 +100,17 @@
         <img src="images/fix_bottom.png">
         <button class="download"></button>
     </div>
+
+    <div class="fix-service">
+        <!--客服链接-->
+        <a href="##################">
+            <img src="images/chat_service.png" alt="24小时客服">
+        </a>
+    </div>
 </div>
 
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/swiper-4.2.0.min.js"></script>
-<script>
-    var downIosUrl = '';
-    var downAndroidUrl = '';
-    var isIos = (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent));
-
-    $(window).ready(function() {
-        var mySwiper = new Swiper('.swiper_banner',{
-            speed: 300,
-            loop: true,
-            autoplay:true,
-            effect:'slide',
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
-    });
-</script>
-
+<script src="js/index.js?v=20230304"></script>
 </body>
 </html>
